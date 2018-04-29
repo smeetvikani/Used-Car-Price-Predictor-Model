@@ -47,7 +47,7 @@ Below is a violin plot created using Seaborn, represents the histogram of averag
 
 
 ---
-### <a name="section-c"></a>3. Model 1 Linear Regression
+### <a name="section-c"></a> Linear Regression
 
 ##### Model 1: Summary
 
@@ -60,17 +60,17 @@ As seen from the residual plot the, model error is not ideal, it varies by upwor
 
 ![Map](images/img2_residualError.jpeg)
 
-##### Model1: Y Factor Distribution
+##### Model 1: Y Factor Distribution
 The distribution of the model is right skewed. As a result, increasing the residual error. 
 
 ![Map](images/img3_hist1.jpeg)
 
-##### Model1: QQ Plot
+##### Model 1: QQ Plot
 The QQ Plot also shows that model is having trouble estimating prices for the most expensive used cars. 
 
 ![Map](images/img6_QQ1.jpeg)
 
-### <a name="section-c2"></a>3. Model 2, Linear Regression Lasso Model
+### <a name="section-c2"></a> Model 2, Linear Regression Lasso Model
 
 Due to high number of features, I had to employ Lasso model to ensure there was no overfitting. Listed below are the features with the highest impact on the model. 
 R Squared of this model remained consistant with the performance of pervious model. Thus, there was no overfitting.  
@@ -78,7 +78,7 @@ R Squared of this model remained consistant with the performance of pervious mod
 ![Map](images/img4a_coef_lasso.png)
 
 
-### <a name="section-c3"></a>3. Model 3, Log Transformed Linear Regression Model
+### <a name="section-c3"></a> Model 3, Log Transformed Linear Regression Model
 
 Depended Variable Log Transformed model was created to deal with the heavy right skewed distribution. Normalizing the distribution would reduce the residual error. 
 
@@ -91,16 +91,16 @@ This model passes the eye test becase, majority of the cars being sold are over 
 ![Map](images/img8_ResidPretransformed.jpeg)
 
 
-##### Model3: Y Factor Distribution
+##### Model 3: Y Factor Distribution
 The distribution of the model approached the bell curve after the transformation. 
 ![Map](images/img7_hist_transformed.jpeg)
 
-##### Model3: QQ Plot
+##### Model 3: QQ Plot
 There was a huge improvement in the QQ Plot of the log transformed model. It fit the bell curve almost perfectly. 
 
 ![Map](images/img9_qq2_transformed.jpeg)
 
-### <a name="section-e"></a>3. Use Case: 
+### <a name="section-e"></a> Use Case: 
 The model would help estimate following Cars Price before posting to Classifieds or buying from Classifieds.
 
 In a business scenario, the buyer can use this info to haggle a better price point. 
@@ -108,10 +108,12 @@ In a business scenario, the buyer can use this info to haggle a better price poi
 ![Map](images/img10_use_case.png)
 
 
-### <a name="section-end"></a>3. Results:
+### <a name="section-end"></a> Results:
 
 For the obtained dataset, It was assumed that majority of the used cars were under 75,000 USD. 
 
 As a result, Log Transformed Linear Regression Model was accurately able to predict 83% of the variance observed in the dataset. 
 
 
+### <a name="section-end"></a> Contact:
+Thank you for visiting the page, feel free to contact me at smeet.vikani@gmail.com

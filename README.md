@@ -53,7 +53,7 @@ Below is a violin plot created using Seaborn, represents the histogram of averag
 
 First model was created using StatsModels and Patsy Interface. Below is the test data model summary. 
 
-![Map](images/model1.png)
+![Map](images/model2.png)
 
 ##### Model 1: Residuals
 As seen from the residual plot the, model error is not ideal, it varies by upwords of 30k in each direction. I will address this in the next model. 

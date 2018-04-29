@@ -103,7 +103,7 @@ There was a huge improvement in the QQ Plot of the log transformed model. It fit
 ### <a name="section-e"></a> Use Case: 
 The model would help estimate following Cars Price before posting to Classifieds or buying from Classifieds.
 
-In a business scenario, the buyer can use this info to haggle a better price point. 
+In a business scenario, the buyer can use this info to bargain a better price point. 
 
 ![Map](images/img10_use_case.png)
 

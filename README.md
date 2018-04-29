@@ -9,7 +9,7 @@
 [5. Model 2, Linear Regression Lasso Model](#section-c2)   
 [6. Model 3, Log Transformed Linear Regression Model](#section-c3)  
 [7. Use Case](#section-e)  
-[8. Results](#section-d)  
+[8. Results](#section-end)  
 [9. Github Repo - Link](https://github.com/smeetvikani/Used-Car-Price-Predictor-Model)
 
 

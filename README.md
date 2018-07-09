@@ -1,5 +1,4 @@
-# Used Car Price Prediction Model for Classifieds 
-
+![Sklearn logo](http://scikit-learn.org/stable/_static/scikit-learn-logo-small.png)
 
 ### Table of Contents
 [1. Project Overview](#section-a)  
@@ -25,7 +24,7 @@
 
 1. Identified top US cities with most cars per square inch. 
 
-2. For those cities, A total of 26,000 Records were scraped using Beautiful Soup and Selenium over the course of 48 Hours. 
+2. For those cities, A total of 26,000 Records were scraped using Beautifulsoup and Selenium over the course of 48 Hours. 
 
 3. Data was acquired from Carfax.com and UsedCars.com
 
@@ -41,9 +40,9 @@
 ---
 ### <a name="section-b2"></a>2.  EDA
 Exploratory Data Analysis was performed on the data to extract meaningful insights before modeling. 
-Below is a violin plot created using Seaborn, represents the histogram of average car spend per state. Only the states listed below were included in the analysis, due to time contraints. 
+Below is a violin plot created using Seaborn, represents the histogram of average car spend per state. Only the states listed below were included in the analysis, due to time constraints. 
 
-![Map](images/img1_violinplots.jpeg)
+![Map](http://downloadforpc.net/Metis/project-car-price-est/img1_violinplots.jpeg)
 
 
 ---
@@ -53,59 +52,59 @@ Below is a violin plot created using Seaborn, represents the histogram of averag
 
 First model was created using StatsModels and Patsy Interface. Below is the test data model summary. 
 
-![Map](images/model2.png)
+![Map](http://downloadforpc.net/Metis/project-car-price-est/model2.png)
 
 ##### Model 1: Residuals
 As seen from the residual plot the, model error is not ideal, it varies by upwords of 30k in each direction. I will address this in the next model. 
 
-![Map](images/img2_residualError.jpeg)
+![Map](http://downloadforpc.net/Metis/project-car-price-est/img2_residualError.jpeg)
 
 ##### Model 1: Y Factor Distribution
 The distribution of the model is right skewed. As a result, increasing the residual error. 
 
-![Map](images/img3_hist1.jpeg)
+![Map](http://downloadforpc.net/Metis/project-car-price-est/img3_hist1.jpeg)
 
 ##### Model 1: QQ Plot
 The QQ Plot also shows that model is having trouble estimating prices for the most expensive used cars. 
 
-![Map](images/img6_QQ1.jpeg)
+![Map](http://downloadforpc.net/Metis/project-car-price-est/img6_QQ1.jpeg)
 
 ### <a name="section-c2"></a> Model 2, Linear Regression Lasso Model
 
 Due to high number of features, I had to employ Lasso model to ensure there was no overfitting. Listed below are the features with the highest impact on the model. 
-R Squared of this model remained consistant with the performance of pervious model. Thus, there was no overfitting.  
+R Squared of this model remained consistent with the performance of pervious model. Thus, there was no overfitting.  
 
-![Map](images/img4a_coef_lasso.png)
+![Map](http://downloadforpc.net/Metis/project-car-price-est/img4a_coef_lasso.png)
 
 
 ### <a name="section-c3"></a> Model 3, Log Transformed Linear Regression Model
 
-Depended Variable Log Transformed model was created to deal with the heavy right skewed distribution. Normalizing the distribution would reduce the residual error. 
+Dependent Variable Log Transformed model was created to deal with the heavy right skewed distribution. Normalizing the distribution would reduce the residual error. 
 
-#### <center>Backtransformed Model Score: .84%</center>
+#### <center>Back Transformed Model Score: .84%</center>
 
 ##### Model 3: Residual Error
 Max Residual Error was upwards of 30k in the previous model, with the log transformed model it was trimmed down to a max of then 10k. 
 
-This model passes the eye test becase, majority of the cars being sold are over 2.5k$
-![Map](images/img8_ResidPretransformed.jpeg)
+This model passes the eye test because, majority of the cars being sold are over 2.5k$
+![Map](http://downloadforpc.net/Metis/project-car-price-est/img8_ResidPretransformed.jpeg)
 
 
 ##### Model 3: Y Factor Distribution
 The distribution of the model approached the bell curve after the transformation. 
-![Map](images/img7_hist_transformed.jpeg)
+![Map](http://downloadforpc.net/Metis/project-car-price-est/img7_hist_transformed.jpeg)
 
 ##### Model 3: QQ Plot
 There was a huge improvement in the QQ Plot of the log transformed model. It fit the bell curve almost perfectly. 
 
-![Map](images/img9_qq2_transformed.jpeg)
+![Map](http://downloadforpc.net/Metis/project-car-price-est/img9_qq2_transformed.jpeg)
 
 ### <a name="section-e"></a> Use Case: 
 The model would help estimate following Cars Price before posting to Classifieds or buying from Classifieds.
 
 In a business scenario, the buyer can use this info to bargain a better price point. 
 
-![Map](images/img10_use_case.png)
+![Map](http://downloadforpc.net/Metis/project-car-price-est/img10_use_case.png)
 
 
 ### <a name="section-end"></a> Results:
@@ -117,3 +116,6 @@ As a result, Log Transformed Linear Regression Model was accurately able to pred
 
 ### <a name="section-end"></a> Contact:
 Thank you for visiting the page, feel free to contact me at smeet.vikani@gmail.com
+
+
+
